@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import "./App.css";
-
+import styled from 'styled-components';
 // importing some form of an API key using the documentation within NASA
 // https://api.nasa.gov/planetary/apod
 
@@ -32,6 +32,8 @@ function App() {
   // const style = style.div.a`
     // styling inline?
     // not sure how to attach it to each component or HTML element
+
+
 
   return (
     <div className="App">
