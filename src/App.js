@@ -36,8 +36,9 @@ function App() {
   const StyledHeader = styled.div`
     width: 60%;
     display: flex;
-    justify-content: space-between;
   `
+  //display: flex;
+  // justify-content: space-between;
 
   return (
     <div className="App">
