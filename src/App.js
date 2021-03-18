@@ -33,30 +33,35 @@ function App() {
     // styling inline?
     // not sure how to attach it to each component or HTML element
 
-
+  const StyledHeader = styled.div`
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  `
 
   return (
     <div className="App">
-      <div>
-        <h1>
-          NASA Photo of the Day
-        </h1>
-      </div>
-      <div>
-        <h3>{ image.title }</h3>
-        <p>{ image.copyright }</p>
-        <p>
-          { image.explanation }
-          <span role="img" aria-label='go!'>🚀</span>
-        </p>
-      </div>
-      <div>
-        <img src= { image.url }></img>
-      </div>
-      <div>
-        <p>{ image.date }</p>
-      </div>
-      
+      <StyledHeader>
+        <div>
+          <h1>
+            NASA Photo of the Day
+          </h1>
+        </div>
+        <div>
+          <h3>{ image.title }</h3>
+          <p>{ image.copyright }</p>
+          <p>
+            { image.explanation }
+            <span role="img" aria-label='go!'>🚀</span>
+          </p>
+        </div>
+        <div>
+          <img src= { image.url }></img>
+        </div>
+        <div>
+          <p>{ image.date }</p>
+        </div>
+      </StyledHeader>
     </div>
   );
 }
